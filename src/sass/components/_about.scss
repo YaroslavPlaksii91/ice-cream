@@ -1,4 +1,13 @@
 // .milk::before {
 //   content: '';
-//   //   background-image: url(/src/images/advantages/milk.png);
+//   display: block;
+//   width: 40px;
+//   height: auto;
+//   background-image: url(./images/advantages/milk.png);
 // }
+.advantages__item {
+  display: block;
+}
+.advantages__titel {
+  margin-left: 50px;
+}
