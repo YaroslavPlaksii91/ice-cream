@@ -1,13 +1,51 @@
-// .milk::before {
-//   content: '';
-//   display: block;
-//   width: 40px;
-//   height: auto;
-//   background-image: url(./images/advantages/milk.png);
-// }
-.advantages__item {
-  display: block;
+.about {
+  background-color: $main-background-soft-pink;
 }
-.advantages__titel {
-  margin-left: 50px;
+.about__image {
+  width: 280px;
+  height: 279px;
+}
+
+.about__title {
+  color: $text-color-pink;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+.about__subtitle {
+  color: $text-color-red;
+  font-size: 34px;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.about__pretext {
+  color: $text-color-black;
+  font-size: 12px;
+  line-height: 1.6;
+  width: 220px;
+}
+.about__text {
+  color: $text-color-grey;
+  font-size: 14px;
+  line-height: 1.9;
+  width: 220px;
+  background-image: url(/images/about/mobile/about_milk-splash.mobile.png);
+  background-repeat: no-repeat;
+  bottom: 0;
+  @media screen and(min-width: 1280px) {
+    background-image: url(/images/about/mobile/about_milk-splash.mobile.png);
+  }
+}
+
+.about__btn {
+  //   position: relative;
+  color: $text-color-red;
+  background-color: $button-white;
+}
+.about__button-icon {
+  //   position: absolute;
+  width: 4.5px;
+  height: 8px;
+  fill: $text-color-red;
 }
