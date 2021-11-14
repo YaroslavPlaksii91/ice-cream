@@ -1,6 +1,10 @@
 .customer-reviews {
   border: 1px solid #e1e1e1;
+  width: 926px;
   height: 350px;
+  margin-top: 134px;
+  margin-left: 178px;
+  margin-right: 176px;
 
   @media screen and (min-width: 328px) {
     width: 157px;
@@ -17,11 +21,12 @@
 .customer-reviews__list-item-img {
   width: 85px;
   height: 85px;
-  border-radius: 44px;
   margin: auto;
   display: block;
   justify-content: center;
+
 }
+
 
 .customer-reviews__item-text {
   width: 750px;
@@ -34,16 +39,14 @@
   text-align: center;
   letter-spacing: 0.04em;
   color: #000000;
-  position: relative;
   background-color: #e1e1e1;
-  margin-left: 178px;
-  margin-right: 176px;
   margin-top: 15px;
   margin-bottom: 15px;
   padding-top: 32px;
   padding-bottom: 32px;
-  padding-left: 50px;
-  padding-right: 54px;
+  margin-left: 87px;;
+ 
+ 
 }
 .customer-reviews__text {
   position: absolute;
@@ -59,23 +62,25 @@
 }
 
 .elips {
+  display: block;
   width: 4px;
   height: 4px;
   background: #c7133e;
-  position: relative;
-  display: block;
+  border-radius: 50%;
+  margin-right: 10px;
+ 
 }
-.elips::before {
-  content: '';
-  width: 4px;
-  height: 4px;
-  position: absolute;
-}
+.elips::before,
 .elips::after {
   content: '';
   width: 4px;
   height: 4px;
-  position: absolute;
+
+}
+.elips::after {
+  content: '';
+  width: 50px;
+  height: 50px;
 }
 
 .customer-reviews__text-coment {
@@ -95,11 +100,12 @@
   margin-top: 15px;
 }
 .customer-reviews__btn {
-  display: flex;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
   width: 12px;
   height: 12px;
+  border-radius: 50%;
   background: #d9d9d9;
+
+  text-align: center;
+  align-items: center;
+
 }
