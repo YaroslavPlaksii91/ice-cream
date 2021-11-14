@@ -20,3 +20,18 @@
     padding-right: 115px;
   }
 }
+
+.gallery__container {
+  padding-left: 17px;
+  padding-right: 17px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 74px;
+    padding-right: 74px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 133px;
+    padding-right: 133px;
+  }
+}
