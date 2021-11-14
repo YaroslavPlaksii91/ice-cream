@@ -1,12 +1,15 @@
 .footer {
+  padding-top: 113px;
   padding-bottom: 25px;
   background-color: $main-background-soft-pink;
 
   @media screen and (min-width: 768px) {
+    padding-top: 158px;
     padding-bottom: 18px;
   }
 
   @media screen and (min-width: 1280px) {
+    padding-top: 165px;
     padding-bottom: 10px;
   }
 }
@@ -26,7 +29,7 @@
 
 .footer__title {
   width: 234px;
-  font-family: Titan One;
+  font-family: $second-font-family;
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
@@ -59,7 +62,7 @@
   }
 
   @media screen and (min-width: 1280px) {
-    width: 477px;
+    width: inherit;
     font-size: 30px;
     line-height: 1.13;
 
@@ -125,7 +128,6 @@
 }
 
 .footer__tel-label {
-  font-family: DM Sans;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.83;
@@ -162,7 +164,6 @@
 
 .copyright {
   padding-top: 22px;
-  font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
