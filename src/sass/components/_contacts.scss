@@ -5,68 +5,143 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.contacts__text {
-  color: $text-color-white;
+.contacts__item {
+  max-width: 220px;
 
-  font-family: DM Sana, sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.86;
-  letter-spacing: 0.04em;
+  background-color: $text-color-white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts__card-set {
+  padding: 43px 21px 43px 20px;
+}
+
+.contacts__name {
+  max-width: 80px;
+  margin-bottom: 25px;
+  padding-left: 20px;
 
   background-color: $product-background-beige;
   border-radius: 4px;
 }
 
-.contacts__text--bg {
+.contacts__name--bg {
+  max-width: 130px;
+
   background-color: $product-background-olive;
   border-radius: 4px;
+}
+
+.contacts__text {
+  color: $text-color-white;
+
+  font-family: $main-font-family;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+
+  align-items: center;
+  text-align: center;
+}
+
+.contacts__title {
+  padding-bottom: 10px;
 }
 
 .contacts__title,
 .contacts__day {
   color: $text-color-black;
 
-  font-family: DM Sana, sans-serif;
+  font-family: $main-font-family;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
   letter-spacing: 0.04em;
 }
 
+.contacts__subtext {
+  margin-bottom: 25px;
+}
+
 .contacts__subtext,
 .contacts__link {
   color: $text-color-grey;
 
-  font-family: DM Sana, sans-serif;
+  font-family: $main-font-family;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
 }
 
+.contacts__cards {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.contacts__subtext::after,
+.contacts__cards::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 179px;
+  top: 0px;
+  left: 0px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+// .contacts__cards::after {
+//   content: '';
+//   position: absolute;
+//   display: block;
+//   width: 179px;
+//   top: 0px;
+//   left: 0px;
+//   border-bottom: 1px solid #e1e1e1;
+// }
+
+.contacts__schedule:not(:last-child) {
+  padding-bottom: 10px;
+}
+
 .contacts__time {
   color: $text-color-pink;
 
-  font-family: DM Sana, sans-serif;
+  font-family: $main-font-family;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
 }
 
-.contacts__item {
-  background-color: $text-color-white;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
+.contacts__block {
+  padding-top: 25px;
+}
+
+.contacts__button {
+  margin-top: 54px;
 }
 
 .contacts__btn {
-  font-family: DM Sans, sans-serif;
+  font-family: $main-font-family;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
 
   align-items: center;
   text-align: center;
+
+  width: 161px;
+  height: 44px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .contacts__btn--primary {
@@ -88,4 +163,18 @@
 .contacts__btn--secondary:hover,
 .contacts__btn--secondary:focus {
   background-color: $button-hover-grey;
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+.btn-icon--primary {
+  fill: $button-white;
+}
+
+.btn-icon--secondary {
+  fill: $button-red;
 }
