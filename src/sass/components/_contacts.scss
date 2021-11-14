@@ -85,7 +85,7 @@
   padding-bottom: 25px;
 }
 
-.contacts__cards::before,
+.contacts__subtext::after,
 .contacts__cards::after {
   content: '';
   position: absolute;
