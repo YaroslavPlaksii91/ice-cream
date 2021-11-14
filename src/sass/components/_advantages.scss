@@ -1,15 +1,21 @@
 .advantages {
   background-color: $main-background-soft-pink;
 }
+
 .advantages__item {
   //   position: relative;
 }
-.advantages__titel {
+.advantages__title {
+  font-family: 'Titan One', sans-serif;
   color: $text-color-red;
-  margin-left: 50px;
   font-size: 36px;
   line-height: 1.14;
   letter-spacing: 0.4em;
+}
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
 }
 
 .milk::before {
@@ -38,8 +44,4 @@
   height: 50px;
   background-image: url(/images/advantages/advantages_candy-heart.png);
   background-repeat: no-repeat;
-}
-.advantages__text {
-  font-size: 12px;
-  line-height: 1.7;
 }

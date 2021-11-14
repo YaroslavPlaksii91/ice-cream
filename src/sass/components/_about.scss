@@ -7,39 +7,54 @@
 }
 
 .about__title {
-  color: $text-color-pink;
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
   font-size: 18px;
   line-height: 1.17;
+  color: $text-color-pink;
   text-transform: uppercase;
+  text-align: center;
 }
 .about__subtitle {
+  font-family: 'Titan One', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.04em;
   color: $text-color-red;
   font-size: 34px;
   line-height: 1.15;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .about__pretext {
+  font-weight: 500;
   color: $text-color-black;
   font-size: 12px;
   line-height: 1.6;
-  width: 220px;
+  //   width: 220px;
+  text-align: center;
 }
 .about__text {
+  font-weight: 500;
   color: $text-color-grey;
   font-size: 14px;
   line-height: 1.9;
-  width: 220px;
+  //   width: 220px;
+  text-align: center;
   background-image: url(/images/about/mobile/about_milk-splash.mobile.png);
   background-repeat: no-repeat;
   bottom: 0;
   @media screen and(min-width: 1280px) {
-    background-image: url(/images/about/mobile/about_milk-splash.mobile.png);
+    background-image: url(/images/about/desktop/about_milk-splash.desktop.png);
   }
 }
 
 .about__btn {
   //   position: relative;
+  font-size: 14px;
+  line-height: 1.29;
+  font-weight: 700;
   color: $text-color-red;
   background-color: $button-white;
 }
