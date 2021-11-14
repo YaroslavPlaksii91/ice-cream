@@ -5,9 +5,9 @@
 
 // Стили для файла с примером HTML-фрагмента
 
+@import './utils/variables.scss'; //Colors palette
 @import './base/reset';
 @import './base/base';
-@import './utils/variables.scss'; //Colors palette
 @import './components/hero-header';
 @import './components/products';
 @import './components/about';
