@@ -1,0 +1,47 @@
+.advantages {
+  background-color: $main-background-soft-pink;
+}
+
+.advantages__item {
+  //   position: relative;
+}
+.advantages__title {
+  font-family: 'Titan One', sans-serif;
+  color: $text-color-red;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.4em;
+}
+.advantages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.milk::before {
+  content: '';
+  //   position: absolute;
+  display: block;
+  width: 33px;
+  height: 50px;
+  background-image: url(/images/advantages/advantages_milk-cup.png);
+  background-repeat: no-repeat;
+}
+.fruits::before {
+  content: '';
+  //   position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(/images/advantages/advantages_apple-pail.png);
+  background-repeat: no-repeat;
+}
+.candy::before {
+  content: '';
+  //   position: absolute;
+  display: block;
+  width: 44px;
+  height: 50px;
+  background-image: url(/images/advantages/advantages_candy-heart.png);
+  background-repeat: no-repeat;
+}
