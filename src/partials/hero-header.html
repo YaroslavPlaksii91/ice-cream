@@ -1,83 +1,81 @@
-<header class="header-hero">
+<header class="header">
     <div class="container">
 <!--header box -->
         <div class="header__box">
           <img class="header__logo" src="./images/header-hero/header_icecream-logo.png" alt="Логотип ice-Cream">
 <!--header navigate -->
-          <ul class="header__navigate">
-            <li class="header__navigate-item">
-              <a class="header__navigate-link" href="./">Home</a>
-            </li>
-            <li class="header__navigate-item">
-              <a class="header__navigate-link" href="./">About us</a>
-            </li>
-            <li class="header__navigate-item">
-              <a class="header__navigate-link" href="./">How it's made?</a>
-            </li>
-            <li class="header__navigate-item">
-              <a class="header__navigate-link" href="./">Our products</a>
-            </li>
-            <li class="header__navigate-item">
-              <a class="header__navigate-link" href="./">Contact</a>
-            </li>
-          </ul>
-<!--mobile burger -->
-          <button type="button" class="burger-switch" aria-expanded="false" aria-controls="mobile-container" data-menu-button>
-            <svg class="mobile__menu-icon" width="" height="" aria-label="Переключатель мобильного меню">
-              <use class="burger-menu" href="./images/icons.svg#icon-burger-header"></use>
-              <use class="burger-close" href="./images/icons.svg#icon-close-btn"></use>
-            </svg>
-          </button>
-<!--mobile menu -->
-          <div class="mobile__container" id="mobile-container" data-menu>
-            <button class="button__buy-now" type="button" data-modal-open>Buy now</button>
-            <ul class="mobile__navigate">
-              <li class="mobile__navigate-item">
-                <a class="mobile__navigate-link" href="./">Home</a>
+          <nav class="header__navigate">
+            <ul class="header__navigate-list">
+              <li class="header__navigate-item">
+                <a class="header__navigate-link" href="./">Home</a>
               </li>
-              <li class="mobile__navigate-item">
-                <a class="mobile__navigate-link" href="./">About us</a>
+              <li class="header__navigate-item">
+                <a class="header__navigate-link" href="./">About us</a>
               </li>
-              <li class="mobile__navigate-item">
-                <a class="mobile__navigate-link" href="./">How it's made?</a>
+              <li class="header__navigate-item">
+                <a class="header__navigate-link" href="./">How it's made?</a>
               </li>
-              <li class="mobile__navigate-item">
-                <a class="mobile__navigate-link" href="./">Our products</a>
+              <li class="header__navigate-item">
+                <a class="header__navigate-link" href="./">Our products</a>
               </li>
-              <li class="mobile__navigate-item">
-                <a class="mobile__navigate-link" href="./">Contact</a>
+              <li class="header__navigate-item">
+                <a class="header__navigate-link" href="./">Contact</a>
               </li>
             </ul>
-          </div>
+          </nav>
 <!--modal buy now -->
           <button class="button__buy-now" type="button" data-modal-open>Buy now</button>
         </div>
+
+  </div>
+  </header>
 <!--hero -->
-        <div class="hero__box">
-          <h1 class="hero__title">ice cream <br> made with <br>
-            <span class="hero__title-passion">passion</span>
-          </h1>
-<!--hero buttons -->
-          <ul class="hero__buttons">
-            <li class="hero__buttons-item"><button type="button">Products</button></li>
-            <li class="hero__buttons-item"><button type="button">How it’s made?</button></li>
-          </ul>
-<!--hero images -->
-          <img class="hero__milk-bottle" src="./images/header-hero/desktop/hero_milk-bottle.desktop.png" alt="Графин с молоком">
-<!--inviting text  -->
-          <p class="hero__inviting">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et</p>
-          <img class="hero__arrow" src="./images/header-hero/desktop/hero_arrow-right.desktop.png" alt="Стрелка вправо">
-<!--ice cream -->
-          <img class="hero__ellipse" src="./images/header-hero/desktop/hero_ellipse.desktop.png" alt="Эллипс">
-          <img class="hero__ice-cream" src="./images/header-hero/desktop/hero_ice-cream.desktop.png" alt="Мороженое рожок">
-<!--16 cafes -->
-          <p class="hero__cafes">16 cafes</p>
-          <img class="hero__ellipse-small" src="./images/header-hero/desktop/hero_ellipse-small.desktop.png" alt="Эллипс мини">
-<!--23 trucks -->
-          <p class="hero__trucks">23 food trucks</p>
-          <img class="hero__ellipse-small" src="./images/header-hero/desktop/hero_ellipse-small.desktop.png" alt="Эллипс мини">
-<!--so tasty -->
-          <img class="hero__so-tasty" src="./images/header-hero/desktop/hero_so-tasty.desktop.png" alt="Мороженое рулит">
+<section class="hero">
+  <div class="container">
+
+      <div class="hero__box">
+        <h1 class="hero__title">ice cream <br> made with <br>
+          <span class="hero__title-passion">passion</span>
+        </h1>
+
+        <!--hero buttons -->
+        <ul class="hero__buttons-list">
+          <li class="hero__buttons-item">
+            <button class="button-red  hero__buttons-link" type="button">Products</button></li>
+          <li class="hero__buttons-item">
+            <button class="button-white  shero__buttons-link" type="button">How it’s made?</button></li>
+        </ul>
+        
+        <!--hero images -->
+        <img class="hero__milk-bottle" src="./images/header-hero/desktop/hero_milk-bottle.desktop.png" alt="Графин с молоком">
+        
+        <!--inviting text  -->
+        <p class="hero__inviting">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut
+          labore et</p>
+        <img class="hero__arrow" src="./images/header-hero/desktop/hero_arrow-right.desktop.png" alt="Стрелка вправо">
+        
+        <!--ice cream -->
+        <img class="hero__ellipse" src="./images/header-hero/desktop/hero_ellipse.desktop.png" alt="Эллипс">
+        <img class="hero__ice-cream" src="./images/header-hero/desktop/hero_ice-cream.desktop.png" alt="Мороженое рожок">
+        
+        <!--16 cafes -->
+        <div class="hero__cafes">
+          <p class="hero__cafes-numeric">16</p>
+          <p class="hero__cafes-verbal">cafes</p>
+          <!-- <img class="hero__ellipse-small" src="./images/header-hero/desktop/hero_ellipse-small.desktop.png" alt="Эллипс мини"> -->
         </div>
-    </div>
-</header>
+
+        <!--23 trucks -->
+        <div class="hero__trucks">
+          <p class="hero__trucks-numeric">23</p>
+          <p class="hero__trucks-verbal">food trucks</p>
+        </div>
+        <!-- <img class="hero__ellipse-small" src="./images/header-hero/desktop/hero_ellipse-small.desktop.png" alt="Эллипс мини"> -->
+        
+        <!--so tasty -->
+        <img class="hero__so-tasty" src="./images/header-hero/desktop/hero_so-tasty.desktop.png" alt="Мороженое рулит">
+      </div>
+
+  </div>
+</section>
+  
