@@ -1,12 +1,56 @@
 .about {
+  // position: relative;
   background-color: $main-background-soft-pink;
-}
-.about__image {
-  width: 280px;
-  height: 279px;
+  background-image: url(/images/about/mobile/about_milk-splash.mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom 50px center;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-color: $main-background-soft-pink;
+    background-image: url(/images/about/mobile/about_milk-splash.mobile@2x.png);
+    background-repeat: no-repeat;
+    background-position: bottom 50px center;
+    background-size: 100%;
+  }
+  @media screen and(min-width: 768px) {
+    // background-color: $main-background-soft-pink;
+    background-image: none;
+  }
+  @media screen and(min-width: 1280px) {
+    background-color: $main-background-soft-pink;
+    background-image: url(/images/about/desktop/about_milk-splash.desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-color: $main-background-soft-pink;
+      background-image: url(/images/about/desktop/about_milk-splash.desktop@2x.png);
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: 100%;
+    }
+  }
 }
 
+.about__image {
+  width: 280px;
+  height: auto;
+  @media screen and(min-width: 768px) {
+    width: 340px;
+    margin-top: 50px;
+  }
+  @media screen and(min-width: 1280px) {
+    width: 516px;
+    margin-top: 55px;
+  }
+}
+.about_label {
+  display: flex;
+  flex-direction: column;
+}
 .about__title {
+  padding-top: 127px;
+  padding-bottom: 15px;
   font-family: 'Titan One', sans-serif;
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -15,6 +59,10 @@
   color: $text-color-pink;
   text-transform: uppercase;
   text-align: center;
+  @media screen and(min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
 }
 .about__subtitle {
   font-family: 'Titan One', sans-serif;
@@ -25,42 +73,94 @@
   line-height: 1.15;
   text-transform: uppercase;
   text-align: center;
+  @media screen and(min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+}
+
+.about__content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and(min-width: 768px) {
+    flex-direction: row;
+  }
+}
+.about__box_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and(min-width: 768px) {
+    margin-left: 17px;
+    margin-top: 100px;
+    align-items: normal;
+  }
+  @media screen and(min-width: 1280px) {
+    margin-top: 0;
+    margin-left: 74px;
+  }
 }
 
 .about__pretext {
   font-weight: 500;
   color: $text-color-black;
   font-size: 12px;
-  line-height: 1.6;
-  //   width: 220px;
-  text-align: center;
+  line-height: 1.62;
+  width: 220px;
+  @media screen and(min-width: 768px) {
+    width: 340px;
+  }
+  @media screen and(min-width: 1280px) {
+    width: 463px;
+    font-size: 16px;
+  }
 }
 .about__text {
+  margin-top: 40px;
   font-weight: 500;
   color: $text-color-grey;
-  font-size: 14px;
-  line-height: 1.9;
-  //   width: 220px;
-  text-align: center;
-  background-image: url(/images/about/mobile/about_milk-splash.mobile.png);
+  font-size: 12px;
+  line-height: 1.62;
+  width: 220px;
   background-repeat: no-repeat;
-  bottom: 0;
+  @media screen and(min-width: 768px) {
+    width: 340px;
+  }
   @media screen and(min-width: 1280px) {
-    background-image: url(/images/about/desktop/about_milk-splash.desktop.png);
+    width: 463px;
+    font-size: 16px;
   }
 }
 
 .about__btn {
   //   position: relative;
+  width: 176px;
+  height: 44px;
+  margin-top: 40px;
   font-size: 14px;
   line-height: 1.29;
   font-weight: 700;
   color: $text-color-red;
   background-color: $button-white;
+  @media screen and(min-width: 768px) {
+    margin-top: 62px;
+  }
 }
-.about__button-icon {
-  //   position: absolute;
-  width: 4.5px;
-  height: 8px;
-  fill: $text-color-red;
-}
+
+// .about__btn::after {
+//   content: '';
+//   display: block;
+//   width: 4.5px;
+//   height: 8px;
+//   bottom: 0;
+//   background-image: url(/images/about/about-arow.png);
+//   color: i;
+// }
+
+// .about__button-icon {
+//   display: inline-flex;
+//   align-items: center;
+//   margin-left: 8px;
+//   fill: red;
+// }
