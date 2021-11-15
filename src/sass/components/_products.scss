@@ -2,11 +2,11 @@
   text-align: center;
   padding: 121px 0px 98px 0px;
 
-  @media screen and (min-width:"768px") {
+  @media screen and (min-width: '768px') {
     padding: 122px 0px 112px 0px;
   }
 
-  @media screen and (min-width:"768px") {
+  @media screen and (min-width: '1280px') {
     padding: 127px 0px 119px 0px;
   }
 
@@ -17,12 +17,12 @@
     text-transform: uppercase;
     color: $text-color-pink;
 
-    @media screen and (min-width:"768px") {
+    @media screen and (min-width: '768px') {
       font-size: 26px;
       line-height: 1.15;
     }
 
-    @media screen and (min-width:"1280px") {
+    @media screen and (min-width: '1280px') {
       font-size: 30px;
       line-height: 1.13;
       letter-spacing: 0.04em;
@@ -38,11 +38,11 @@
     text-transform: uppercase;
     color: $text-color-red;
 
-    @media screen and (min-width:"768px") {
+    @media screen and (min-width: '768px') {
       font-size: 48px;
     }
 
-    @media screen and (min-width:"1280px") {
+    @media screen and (min-width: '1280px') {
       font-size: 58px;
       line-height: 1.13;
       letter-spacing: 0.06em;
@@ -52,18 +52,17 @@
   &__list {
     text-align: center;
 
-    @media screen and (min-width:"768px") {
+    @media screen and (min-width: '768px') {
       display: flex;
       gap: 20px;
     }
 
-    @media screen and (min-width:"1280px") {
+    @media screen and (min-width: '1280px') {
       display: flex;
       gap: 29px;
     }
 
     & li:nth-child(1) {
-
       background: $product-background-pink;
 
       &::before {
@@ -76,7 +75,7 @@
           background-image: url('../images/products/mobile/products_ice-cream.mobile@2x.png');
         }
 
-        @media screen and (min-width:"768px") {
+        @media screen and (min-width: '768px') {
           height: 226px;
           background-image: url('../images/products/tablet/products_ice-cream.tablet.png');
 
@@ -86,7 +85,7 @@
           }
         }
 
-        @media screen and (min-width:"1280px") {
+        @media screen and (min-width: '1280px') {
           height: 335px;
           background-image: url('../images/products/desktop/products_ice-cream.desktop.png');
 
@@ -99,7 +98,6 @@
     }
 
     & li:nth-child(2) {
-
       background: $product-background-beige;
 
       &::before {
@@ -112,7 +110,7 @@
           background-image: url('../images/products/mobile/products_ice-coffee.mobile@2x.png');
         }
 
-        @media screen and (min-width:"768px") {
+        @media screen and (min-width: '768px') {
           height: 233px;
           background-image: url('../images/products/tablet/products_ice-coffee.tablet.png');
 
@@ -122,7 +120,7 @@
           }
         }
 
-        @media screen and (min-width:"1280px") {
+        @media screen and (min-width: '1280px') {
           height: 335px;
           background-image: url('../images/products/desktop/products_ice-coffee.desktop.png');
 
@@ -147,7 +145,7 @@
           background-image: url('../images/products/mobile/products_milkshakes.mobile@2x.png');
         }
 
-        @media screen and (min-width:"768px") {
+        @media screen and (min-width: '768px') {
           height: 224px;
           background-image: url('../images/products/tablet/products_milkshakes.tablet.png');
 
@@ -157,7 +155,7 @@
           }
         }
 
-        @media screen and (min-width:"1280px") {
+        @media screen and (min-width: '1280px') {
           height: 335px;
           background-image: url('../images/products/desktop/products_milkshakes.desktop.png');
 
@@ -181,13 +179,13 @@
     align-items: center;
     margin-top: 135px;
 
-    @media screen and (min-width:"1280px") {
+    @media screen and (min-width: '1280px') {
       margin-top: 245px;
       width: 525px;
     }
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       margin: auto;
       display: block;
@@ -195,11 +193,11 @@
       height: 252px;
       bottom: 347px;
 
-      @media screen and (min-width:"768px") {
+      @media screen and (min-width: '768px') {
         width: 220px;
       }
 
-      @media screen and (min-width:"1280px") {
+      @media screen and (min-width: '1280px') {
         height: 335px;
         width: 335px;
       }
@@ -210,12 +208,13 @@
     font-family: Titan One;
     font-size: 20px;
     line-height: 1.15;
+    font-weight: 400;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $text-color-white;
     margin-top: 161px;
 
-    @media screen and (min-width:"1280px") {
+    @media screen and (min-width: '1280px') {
       font-size: 30px;
       line-height: 1.13px;
     }
@@ -228,7 +227,6 @@
     border-radius: 5px;
     font-size: 0;
     padding: 4px;
-
 
     &::before {
       position: absolute;
@@ -261,21 +259,56 @@
     line-height: 152%;
     letter-spacing: 0.04em;
     color: $text-color-white;
-    width: 62.5%;
+    width: 72%;
 
-    @media screen and (min-width:"768px") {
+    @media screen and (min-width: '768px') {
       line-height: 176%;
       letter-spacing: 0.04em;
       width: 90%;
     }
 
-    @media screen and (min-width:"1280px") {
+    @media screen and (min-width: '1280px') {
       font-size: 14px;
       width: 73.25%;
     }
   }
 
-  &__link {
+  &__text-hide {
+    line-height: 130%;
+    @media screen and (min-width: '768px') {
+      display: none;
+    }
+  }
+
+  &__btn {
     margin-top: 30px;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('../images/products/mobile/products_arrow-right.mobile.png');
+
+    @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi) {
+      background-image: url('../images/products/mobile/products_arrow-right.mobile@2x.png');
+    }
+
+    @media screen and (min-width: '768px') {
+      background-image: url('../images/products/tablet/products_arrow-right.tablet.png');
+
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+        background-image: url('../images/products/tablet/products_arrow-right.tablet@2x.png');
+      }
+    }
+
+    @media screen and (min-width: '1280px') {
+      background-image: url('../images/products/desktop/products_arrow-right.desktop.png');
+
+      @media (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi) {
+        background-image: url('../images/products/desktop/products_arrow-right.desktop@2x.png');
+      }
+    }
   }
 }
