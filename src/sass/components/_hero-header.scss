@@ -117,7 +117,7 @@
 
   @media screen and (min-width: 1279px) {
     // left: 1006px;
-    right: 55px;
+    right: 125px;
     top: 38px;
   }
 }
@@ -413,7 +413,7 @@
   background-repeat: no-repeat;
   width: 43px;
   height: 44px;
-  right: 10px;
+  right: 0px;
   top: 100px;
 
   @media screen and (max-width: 767px) {
@@ -426,13 +426,15 @@
     width: 77px;
     height: 77px;
     top: 120px;
+    right: 0px;
   }
 }
 .hero__trucks {
   position: absolute;
   width: 43px;
   height: 44px;
-  right: 10px;
+  right: 0px;
+  // left: 1050px;
   top: 155px;
 
   background-image: url(/images/header-hero/tablet/hero_ellipse-small.tablet.png);
@@ -446,7 +448,8 @@
     background-image: url(/images/header-hero/desktop/hero_ellipse-small.desktop.png);
     background-position: top 0px right 3px;
     top: 220px;
-    width: 85px;
+    right: 0px;
+    width: 77px;
     height: 77px;
   }
 }
