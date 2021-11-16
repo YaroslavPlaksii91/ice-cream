@@ -293,6 +293,9 @@
   left: 0px;
   top: 245px;
 
+  animation-duration: 1000ms;
+  animation-name: slidein;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -302,18 +305,16 @@
     height: 191px;
     top: 429px;
     left: -38px;
-
-    animation-duration: 1000ms;
-    animation-name: slidein;
-  }
-}
-@keyframes slidein {
-  from {
-    margin-left: 100%;
   }
 
-  to {
-    margin-left: 0%;
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+    }
+
+    to {
+      margin-left: 0%;
+    }
   }
 }
 
@@ -417,6 +418,9 @@
   right: 9px;
   top: 92px;
 
+  animation-duration: 1000ms;
+  animation-name: slideinice;
+
   @media screen and (min-width: 768px) {
     width: 143px;
     height: 336px;
@@ -430,11 +434,9 @@
 
     left: 480px;
     top: 108px;
-
-    animation-duration: 1000ms;
-    animation-name: slideinice;
   }
 }
+
 @keyframes slideinice {
   from {
     margin-top: 100%;
@@ -579,6 +581,11 @@
   left: 540px;
   top: 266px;
 
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -588,12 +595,8 @@
     height: 232px;
     left: 760px;
     top: 433px;
-
-    animation-name: spin;
-    animation-duration: 1000ms;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
   }
+
   @keyframes spin {
     from {
       transform: scale(0.8);
