@@ -1,9 +1,18 @@
 .advantages {
-     background-color: $main-background-soft-pink;      
+        background-color: $main-background-soft-pink;      
+        padding-top: 39px;
+        padding-bottom: 97px;
+        @media screen and (min-width: 768px) {
+          padding-top: 66px;
+          padding-bottom: 140px;
+        }
+        @media screen and (min-width: 1280px)  {
+          padding-top: 39px;
+          padding-bottom: 140px;
+        }
     }
 
 .advantages__list{
-        padding-bottom: 97px;
       @media screen and (min-width: 768px){
         display: flex;
         margin: -30px;
@@ -28,7 +37,7 @@
 }
 
 .advantages__title {
-        padding-top: 38px;
+       
         font-family: 'Titan One', sans-serif;
         color: $text-color-red;
         font-size: 36px;
@@ -53,7 +62,7 @@
         margin-top: 13px;
         font-size: 14px;
         line-height: 1.74;
-        padding-bottom: 140px; 
+        
       }
       @media screen and (min-width:1280px) {
         margin-top: 15px;
