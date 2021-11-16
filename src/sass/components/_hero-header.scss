@@ -287,6 +287,7 @@
 
 .hero__milk-bottle {
   position: absolute;
+
   width: 124px;
   height: 126px;
   left: 0px;
@@ -301,6 +302,21 @@
     height: 191px;
     top: 429px;
     left: -38px;
+
+  
+
+  animation-duration: 1000ms;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+
   }
 }
 
@@ -384,6 +400,7 @@
 
 .hero__ice-cream {
   position: absolute;
+
   width: 171px;
   height: 410px;
   // left: 117px;
@@ -403,6 +420,21 @@
 
     left: 480px;
     top: 108px;
+=======
+  
+
+  animation-duration: 1000ms;
+  animation-name: slideinice;
+}
+
+@keyframes slideinice {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 0;
+
   }
 }
 
@@ -534,6 +566,7 @@
 
 .hero__so-tasty {
   position: absolute;
+
   width: 168px;
   height: 133px;
   left: 540px;
@@ -548,5 +581,21 @@
     height: 232px;
     left: 760px;
     top: 433px;
+
+ 
+
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+
   }
 }

@@ -1,5 +1,11 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-arrow-right-red" viewBox="0 0 19 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)"  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
+</symbol>
+<symbol id="icon-arrow-right-white" viewBox="0 0 19 32">
+<path fill="none" stroke="#FFFFFF" style="stroke: var(--color1, #FFFFFF)"  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
+</symbol>
 <symbol id="icon-telegram" viewBox="0 0 32 32">
 <path  d="M12.613 19.671l-0.491 6.444c0.702 0 1.006-0.282 1.371-0.62l3.293-2.937 6.822 4.663c1.251 0.651 2.133 0.308 2.47-1.074l4.478-19.585 0.001-0.001c0.397-1.726-0.669-2.401-1.888-1.978l-26.323 9.406c-1.796 0.651-1.769 1.585-0.305 2.009l6.73 1.954 15.632-9.129c0.736-0.455 1.404-0.203 0.854 0.252l-12.645 10.597z"></path>
 </symbol>
@@ -23,6 +29,14 @@
 <symbol id="icon-close-btn" viewBox="0 0 32 32">
 <path  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.519 2l26.963 28"></path>
 <path  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
+</symbol>
+<symbol id="icon-about-arow" viewBox="0 0 26 32">
+<path  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.171 3.2l14.17 12.8-14.17 12.8"></path>
+</symbol>
+<symbol id="icon-slider-dots" viewBox="0 0 195 32">
+<path fill="#d9d9d9" style="fill: var(--color1, #d9d9d9)" d="M114.667 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="#d31342" style="fill: var(--color2, #d31342)" d="M34.253 15.613c0.599-0.659 0.541-1.669-0.129-2.255l-14.772-12.926c-0.671-0.586-1.745-0.574-2.402 0.028l-14.822 13.587c-0.656 0.602-0.689 1.611-0.071 2.252l0.372 0.387c0.617 0.642 1.613 0.718 2.224 0.17l1.108-0.992v14.523c0 0.891 0.722 1.613 1.612 1.613h5.778c0.89 0 1.612-0.721 1.612-1.613v-10.161h7.37v10.161c-0.013 0.89 0.624 1.612 1.515 1.612h6.123c0.89 0 1.613-0.722 1.613-1.613v-14.318s0.306 0.268 0.683 0.6c0.377 0.331 1.168 0.066 1.767-0.594l0.42-0.462z"></path>
+<path fill="#d9d9d9" style="fill: var(--color1, #d9d9d9)" d="M194.667 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 </symbol>
 </defs>
 </svg>
