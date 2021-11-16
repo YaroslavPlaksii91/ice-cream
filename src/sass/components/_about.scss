@@ -135,6 +135,9 @@
 
 .about__btn {
   //   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 176px;
   height: 44px;
   margin-top: 40px;
