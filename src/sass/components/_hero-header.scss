@@ -215,6 +215,19 @@
   height: 191px;
   left: 77px;
   top: 429px;
+
+  animation-duration: 1000ms;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
 }
 
 .hero__inviting {
@@ -256,6 +269,19 @@
   height: 557px;
   left: 594px;
   top: 108px;
+
+  animation-duration: 1000ms;
+  animation-name: slideinice;
+}
+
+@keyframes slideinice {
+  from {
+    margin-top: 100%;
+  }
+
+  to {
+    margin-top: 0;
+  }
 }
 
 .hero__cafes {
@@ -341,4 +367,18 @@
   height: 232px;
   left: 878px;
   top: 433px;
+
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
 }
