@@ -153,3 +153,28 @@
     height: 32px;
   }
 }
+
+.swiper-pagination {
+  position: static;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url(/images/customer/house.png);
+  width: 13px;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 18px;
+}
