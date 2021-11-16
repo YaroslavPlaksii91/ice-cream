@@ -66,6 +66,7 @@
       background: $product-background-pink;
 
       &::before {
+        z-index: 3;
         background-image: url('../images/products/mobile/products_ice-cream.mobile.png');
 
         @media (-webkit-min-device-pixel-ratio: 2),
@@ -99,8 +100,8 @@
 
     & li:nth-child(2) {
       background: $product-background-beige;
-
       &::before {
+        z-index: 3;
         background-image: url('../images/products/mobile/products_ice-coffee.mobile.png');
 
         @media (-webkit-min-device-pixel-ratio: 2),
@@ -136,6 +137,7 @@
       background: $product-background-olive;
 
       &::before {
+        z-index: 3;
         background-image: url('../images/products/mobile/products_milkshakes.mobile.png');
 
         @media (-webkit-min-device-pixel-ratio: 2),
@@ -275,12 +277,15 @@
 
   &__text-hide {
     line-height: 130%;
+
     @media screen and (min-width: '768px') {
       display: none;
     }
   }
 
   &__btn {
+    z-index: 3;
+    transition: all 0.5s ease;
     margin-top: 30px;
     width: 40px;
     height: 40px;
@@ -310,5 +315,67 @@
         background-image: url('../images/products/desktop/products_arrow-right.desktop@2x.png');
       }
     }
+
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    }
   }
+
+  &__overlay-card {
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateX(-100%);
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: $product-background-pink;
+    border-radius: 24px;
+    z-index: 2;
+  }
+}
+
+.overlay-card {
+  &__title {
+    @extend .products__item-title;
+  }
+
+  &__list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__item {
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 152%;
+    letter-spacing: 0.04em;
+    color: $text-color-white;
+  }
+}
+
+#rose-card {
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+#brown-card {
+  background: $product-background-beige;
+  box-shadow: rgba(182, 129, 56, 0.4) 0px 5px, rgba(202, 162, 106, 0.3) 0px 10px, rgba(216, 132, 99, 0.2) 0px 15px, rgba(173, 115, 94, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+}
+
+#green-card {
+  background: $product-background-olive;
+  box-shadow: rgba(121, 180, 48, 0.4) 5px 5px, rgba(102, 133, 64, 0.3) 10px 10px, rgba(147, 178, 106, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(194, 226, 151, 0.05) 25px 25px;
+}
+.card-visible {
+  transition: all 0.5s ease;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.button-visible {
+  transition: all 0.5s ease;
+  transform: rotate(-180deg);
 }
