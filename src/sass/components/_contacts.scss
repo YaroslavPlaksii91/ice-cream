@@ -282,14 +282,12 @@
 }
 
 .contacts__button {
-  padding-top: 54px;
-
+  margin-top: 54px;
+  // display: flex;
+  // justify-content: center;
   // align-items: center;
-  // margin-right: 79.55px;
-  // margin-left: 79px;
-  // text-align: center;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 767px) {
     margin-right: 79.55px;
     margin-left: 79px;
     display: flex;
@@ -298,19 +296,15 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding-top: 81px;
-    display: flex;
-    justify-content: center;
-    // align-items: center;
-    // align-content: center;
+    margin-top: 81px;
+    // display: flex;
+    // justify-content: center;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 86px;
-    display: flex;
-    justify-content: center;
-    // align-items: center;
-    // align-content: center;
+    margin-top: 86px;
+    // display: flex;
+    // justify-content: center;
   }
 }
 
@@ -320,28 +314,26 @@
   font-size: 16px;
   line-height: 21px;
 
-  // align-items: center;
-  // text-align: center;
-
-  width: 161px;
+  min-width: 161px;
   height: 44px;
   padding: 0px;
 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   @media screen and (min-width: 768px) {
-    width: 191.45px;
+    min-width: 191.45px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 198px;
+    min-width: 198px;
   }
 }
 
 .contacts__btn--primary {
   color: $button-white;
   background-color: $button-red;
-  // margin-bottom: 10px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 767px) {
     margin-bottom: 10px;
   }
 
@@ -362,6 +354,14 @@
 .contacts__btn--secondary {
   color: $button-red;
   background-color: $button-white;
+
+  @media screen and (min-width: 768px) {
+    width: 174px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+  }
 }
 
 .contacts__btn--secondary:hover,
