@@ -282,23 +282,24 @@
 }
 
 .contacts__button {
+  
   margin-top: 54px;
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
   // align-items: center;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-right: 79.55px;
     margin-left: 79px;
-    display: flex;
+    // display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: center;
   }
 
   @media screen and (min-width: 768px) {
     margin-top: 81px;
-    // display: flex;
-    // justify-content: center;
+    flex-wrap: nowrap;
+        
   }
 
   @media screen and (min-width: 1280px) {
@@ -333,7 +334,7 @@
   color: $button-white;
   background-color: $button-red;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 10px;
   }
 
