@@ -30,7 +30,7 @@
       </nav>
       <button
           class="menu__header js-open-menu"
-          aria-expanded="false"
+          aria-hidden="false"
           aria-controls="mobile-menu">
             <svg
             width="20"
@@ -151,7 +151,7 @@
     </div>
   </div>
   <!------------------------ mobile-menu------------------>
-  <div class="menu__container is-open js-menu-container" id="mobile-menu">
+  <div class="menu__container is-hidden js-menu-container" id="mobile-menu">
        
     <button class="mobile__button-close js-close-menu">
       <svg
@@ -162,8 +162,7 @@
     </button>
       <div class="mobile__section">
         <button class="mobile__button-buy-now " type="button" data-modal-open>Buy now
-          <svg class="mobile__button-icon" width= "5.26";
-          heigh= "8";>
+          <svg class="mobile__button-icon" width= "5.26"; heigh= "8";>
             <use href="./images/icons.svg#icon-arrow-right-red"></use>
         </svg>
         </button>
@@ -171,19 +170,19 @@
         <nav class="mobile__navigate">
           <ul class="mobile__navigate-list">
             <li class="mobile__navigate-item">
-              <a class="mobile__navigate-link" href="./">Home</a>
+              <a class="mobile__navigate-link" href="./hero-header">Home</a>
             </li>
             <li class="mobile__navigate-item">
-              <a class="mobile__navigate-link" href="./">About us</a>
+              <a class="mobile__navigate-link" href="#customer-reviews">About us</a>
             </li>
             <li class="mobile__navigate-item">
-              <a class="mobile__navigate-link" href="./">How it's made?</a>
+              <a class="mobile__navigate-link" href="#about">How it's made?</a>
             </li>
             <li class="mobile__navigate-item">
-              <a class="mobile__navigate-link" href="./">Our products</a>
+              <a class="mobile__navigate-link" href="#products">Our products</a>
             </li>
             <li class="mobile__navigate-item">
-              <a class="mobile__navigate-link" href="./">Contact</a>
+              <a class="mobile__navigate-link" href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
