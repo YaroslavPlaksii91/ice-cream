@@ -1,150 +1,124 @@
 .header__position {
-  position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 480px;
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;
-  }
+      position: relative;
+      margin-right: auto;
+      margin-left: auto;
+      background-color: $main-background-hard-pink;
 }
 .hero {
-  overflow: hidden;
+      overflow: hidden;
 }
 
 .hero__container {
-  height: 502px;
-
-  @media screen and (min-width: 768px) {
-    height: 399px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    height: 665px;
-  }
-}
-
-.header {
-  position: absolute;
-  width: 100%;
+      @media screen and (min-width: 1280px) {
+        padding-left: 46px;
+      } 
 }
 
 .header__box {
-  // position: relative;
-  display: flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 6px;
+    @media screen and (min-width: 768px) {
+      padding-top: 37px;
+    }
 }
 
 .header__logo {
-  position: absolute;
-  width: 199px;
-  height: 50px;
-  left: 20px;
-  top: 6px;
-
-  @media screen and (min-width: 768px) {
-    left: 34px;
-    top: 37px;
-  }
+      width: 199px;
+      height: 50px;
 
   @media screen and (min-width: 1280px) {
-    left: 46px;
-    top: 37px;
+      margin-right: 110px;
   }
+}
+
+.header__navigate{
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
 
 .header__navigate-list {
-  position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
 
-  left: 355px;
-  top: 50px;
-
-  display: flex;
-  width: 541px;
-  height: 21px;
-  padding: 0;
-
-  z-index: 2;
-
-  @media screen and (max-width: 1279px) {
-    display: none;
-  }
+    @media screen and (max-width: 1279px) {
+      display: none;
+    }
 }
 
 .header__navigate-item:nth-child(n + 2) {
-  margin-left: 35px;
+      margin-left: 35px;
 }
 
 .header__navigate-link {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
 
-  display: flex;
-  flex-wrap: nowrap;
+      display: flex;
+      flex-wrap: nowrap;
 
-  color: $text-color-white;
-  transition: 0.5s;
+      color: $text-color-white;
+      transition: 0.5s;
 
-  &:hover {
-    color: $text-color-red;
-    transition: 0.5s;
-  }
+      &:hover {
+        color: $text-color-red;
+        transition: 0.5s;
+      }
 }
 
 .button__buy-now {
-  position: absolute;
-  width: 160px;
-  height: 44px;
+        padding: 0px;
+  
+        min-width: 160px;
+        height: 44px;
 
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
 
-  border: none;
-  border-radius: 22px;
-  background-color: #ffffff;
-  transition: 0.5s;
-  color: #d41443;
+        border: none;
+        border-radius: 22px;
+        background-color: #ffffff;
+        color: #d41443;
 
-  &:hover {
-    background-color: #ecebeb;
-    transition: 0.5s;
-  }
+    &:hover {
+      background-color: #ecebeb;
+      transition: 0.5s;
+    }
 
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
 
-  @media screen and (min-width: 768px) {
-    // left: 574px;
-    right: 35px;
-    top: 38px;
-  }
+      @media screen and (min-width: 768px) {
+        margin-right: 0px; 
+        margin-left:auto;
+      }
 
-  @media screen and (min-width: 1279px) {
-    // left: 1006px;
-    right: 125px;
-    top: 38px;
-  }
+      @media screen and (min-width: 1279px) { 
+        margin-left: auto;
+        margin-right: 0px; 
+      }
 }
 
 .hero__buttons-link {
   display: flex;
   align-items: center;
   justify-content: center;
-
   height: 24px;
   border-radius: 20px;
 
