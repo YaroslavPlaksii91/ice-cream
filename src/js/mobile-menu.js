@@ -23,6 +23,12 @@
     mobileMenuProducts.addEventListener('click', toggleMenu);
     mobileMenuContacts.addEventListener('click', toggleMenu);
 
+        // Закрываем мобильное меню после выбора секции 
+        $(".mobile__navigate-link").click(function () {
+          if ($(".menu__container").hasClass('is-open')) {
+            $(".menu__container").removeClass('is-open');
+          }
+        });
   
     // Закрываем мобильное меню на более широких экранах
     // в случае изменения ориентации устройства.
