@@ -7,4 +7,9 @@
 }
 .grid-masonry-item__image {
   border-radius: 20px;
+  transition: transform 200ms ease-in-out;
+}
+
+.grid-masonry-item__image:hover {
+  transform: scale(1.3);
 }
