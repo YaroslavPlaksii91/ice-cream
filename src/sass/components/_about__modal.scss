@@ -21,7 +21,7 @@
 
 .about__modal {
   position: relative;
-  width: 800px;
+  width: 350px;
   height: 620px;
   background-color: transparent;
   display: flex;
@@ -31,6 +31,7 @@
   transform: scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and(min-width: 768px) {
+    width: 800px;
     height: 700px;
     flex-direction: row;
     justify-content: space-evenly;
@@ -41,14 +42,18 @@
 }
 .close__about_modal {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0px;
+  right: 0px;
   width: 20px;
   height: 20px;
   padding: 0;
   border-radius: 50%;
   border: none;
   background-color: $customer-passive-slider-color;
+  @media screen and(min-width: 768px) {
+    top: 30px;
+    right: 30px;
+  }
 }
 .close_icon {
   width: 10px;
