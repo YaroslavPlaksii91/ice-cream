@@ -126,25 +126,22 @@
   }
 }
 
-.button-red {
-  width: 62px;
-  height: 24px;
-
+.hero__buttons-link {
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
 
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 8px;
-  line-height: 1.3;
-  color: $text-color-white;
-
-  background-color: $button-red;
+  height: 24px;
   border-radius: 20px;
-  border: none;
+
+  font-size: 8px;
+  line-height: 1.25;
+}
+
+.hero__buttons-link--red {
+  width: 62px;
+  color: $text-color-white;
+  background-color: $button-red;
 
   &:hover {
     background-color: $button-hover-red;
@@ -156,29 +153,14 @@
     height: 40px;
 
     font-size: 14px;
+    line-height: 1.29;
   }
 }
 
-.button-white {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-
+.hero__buttons-link--white {
   width: 83px;
-  height: 24px;
-
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 8px;
-  line-height: 1.3;
   color: $text-color-red;
   background-color: $button-white;
-  border-radius: 20px;
-  border: none;
-  // transition: 0.5s;
-  // z-index: 3;
 
   &:hover {
     background-color: #ecebeb;
@@ -189,8 +171,8 @@
     width: 138px;
     height: 40px;
 
-    background-color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
+    line-height: 1.29;
   }
 }
 
@@ -287,6 +269,9 @@
 
 .hero__buttons-item:nth-child(1) {
   margin-right: 8px;
+  @media screen and (min-width: 1280px) {
+    margin-right: 15px;
+  }
 }
 
 .hero__milk-bottle {
@@ -610,5 +595,3 @@
     }
   }
 }
-
-
