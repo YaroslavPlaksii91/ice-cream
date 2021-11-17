@@ -1,0 +1,68 @@
+.about__backdrop {
+  position: fixed;
+  z-index: 20;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: #9e5567, $alpha: 0.5);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.about__modal {
+  position: relative;
+  width: 800px;
+  height: 700px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.close__about_modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: $customer-passive-slider-color;
+}
+.close_icon {
+  width: 10px;
+  height: 10px;
+}
+
+.about__modal_one {
+  width: 300px;
+  height: 600px;
+  background-color: rgb(233, 177, 177);
+  border-radius: 10px;
+  padding-top: 40px;
+  padding-left: 20px;
+  line-height: 1.7;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.about__modal_two {
+  width: 300px;
+  height: 600px;
+  background-color: rgb(233, 177, 177);
+  border-radius: 10px;
+  padding-top: 40px;
+  padding-left: 20px;
+  line-height: 1.7;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.about__modal_text {
+  margin-top: 20px;
+}
