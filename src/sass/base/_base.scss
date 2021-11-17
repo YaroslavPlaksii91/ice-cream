@@ -14,3 +14,14 @@
   border-radius: 22px;
   border: none;
 }
+
+.button__icon-arrow {
+  &--red {
+    margin-top: 2px;
+    margin-left: 13px;
+  }
+
+  &--white {
+    @extend .button__icon-arrow--red;
+  }
+}
