@@ -7,6 +7,7 @@
         src="./images/header-hero/header_icecream-logo.png"
         alt="Логотип ice-Cream"
       />
+      
       <!--header navigate -->
       <nav class="header__navigate">
         <ul class="header__navigate-list">
@@ -27,9 +28,18 @@
           </li>
         </ul>
       </nav>
-
+      <button
+          class="menu__header js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+            <svg
+            width="20"
+            height="12">
+                <use href="./images/icons.svg#icon-burger-header"></use>
+            </svg>    
+        </button>
       <!--modal buy now -->
-      <button class="button__buy-now" type="button" data-modal-open>Buy now</button>
+      <button class="button__buy-now " type="button" data-modal-open>Buy now</button>
     </div>
   </div>
 </header>
@@ -151,5 +161,43 @@
         alt="Мороженое рулит"
       />
     </div>
+  </div>
+  <!------------------------ mobile-menu------------------>
+  <div class="menu__container is-open js-menu-container" id="mobile-menu">
+       
+    <button class="mobile__button-close js-close-menu">
+      <svg
+      width="14"
+      height="14">
+        <use href="./images/icons.svg#icon-close-btn"></use> 
+      </svg> 
+    </button>
+      <div class="mobile__section">
+        <button class="mobile__button-buy-now " type="button" data-modal-open>Buy now
+          <svg class="mobile__button-icon" width= "5.26";
+          heigh= "8";>
+            <use href="./images/icons.svg#icon-arrow-right-red"></use>
+        </svg>
+        </button>
+      </div>
+        <nav class="mobile__navigate">
+          <ul class="mobile__navigate-list">
+            <li class="mobile__navigate-item">
+              <a class="mobile__navigate-link" href="./">Home</a>
+            </li>
+            <li class="mobile__navigate-item">
+              <a class="mobile__navigate-link" href="./">About us</a>
+            </li>
+            <li class="mobile__navigate-item">
+              <a class="mobile__navigate-link" href="./">How it's made?</a>
+            </li>
+            <li class="mobile__navigate-item">
+              <a class="mobile__navigate-link" href="./">Our products</a>
+            </li>
+            <li class="mobile__navigate-item">
+              <a class="mobile__navigate-link" href="./">Contact</a>
+            </li>
+          </ul>
+        </nav>
   </div>
 </section>
