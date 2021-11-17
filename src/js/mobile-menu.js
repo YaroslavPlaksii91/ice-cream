@@ -24,6 +24,24 @@
       if (!e.matches) return;
       mobileMenu.classList.remove('is-open');
       openMenuBtn.setAttribute('aria-expanded', false);
-      bodyScrollLock.enableBodyScroll(document.body);
+      bodyScrollLock.enableBodyScroll(docmobile__navigate-linkument.body);
     });
+
+    // Закрываем мобильное меню после выбора секции 
+    $(".mobile__navigate-link").click(function () {
+      if ($(".menu__container").hasClass('is-open')) {
+        $(".menu__container").removeClass('is-open');
+      }
+    });
+    //Плавный переход на верх при нажатии Home *может быть задействован так же для будущей кнпки UP
+    (function($) {
+      $(function() {
+      
+        $('#home-link').click(function() {
+          $('html, body').animate({scrollTop: 0},500);
+          return false;
+        })
+      
+      })
+      })(jQuery)
   })();
