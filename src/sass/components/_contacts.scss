@@ -1,21 +1,23 @@
 .contacts {
   padding-top: 86px;
-  background-color: $main-background-soft-pink;
-  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(#fff 11%, $main-background-soft-pink 11%);
 
   @media screen and (min-width: 768px) {
     padding-top: 119px;
+    background-image: linear-gradient(#fff 25%, $main-background-soft-pink 25%);
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 132px;
 
-    background-image: url('../images/contacts/bg-droppink.1x.png');
+    background-image: url('../images/contacts/bg-droppink.1x.png'),
+      linear-gradient(#fff 28%, $main-background-soft-pink 28%);
     background-size: contain;
     background-repeat: no-repeat;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/contacts/bg-droppink@2x.png');
+      background-image: url('../images/contacts/bg-droppink@2x.png'),
+        linear-gradient(#fff 28%, $main-background-soft-pink 28%);
     }
   }
 }
@@ -282,23 +284,24 @@
 }
 
 .contacts__button {
+  
   margin-top: 54px;
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
   // align-items: center;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-right: 79.55px;
     margin-left: 79px;
-    display: flex;
+    // display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    // justify-content: center;
   }
 
   @media screen and (min-width: 768px) {
     margin-top: 81px;
-    // display: flex;
-    // justify-content: center;
+    flex-wrap: nowrap;
+        
   }
 
   @media screen and (min-width: 1280px) {
@@ -333,7 +336,7 @@
   color: $button-white;
   background-color: $button-red;
 
-  @media screen and (min-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 10px;
   }
 
