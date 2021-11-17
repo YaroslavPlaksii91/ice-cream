@@ -337,22 +337,17 @@
 }
 
 .hero__btn--arrow {
-  position: absolute;
-
-  width: 26px;
-  height: 26px;
-  left: 295px;
-  top: 583px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('../images/products/mobile/products_arrow-right.mobile.png');
-
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    background-image: url('../images/products/mobile/products_arrow-right.mobile@2x.png');
-  }
-
+  display: none;
   @media screen and (min-width: '768px') {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 120px;
+    top: 345px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url('../images/products/tablet/products_arrow-right.tablet.png');
 
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -361,6 +356,11 @@
   }
 
   @media screen and (min-width: '1280px') {
+    width: 24px;
+    height: 24px;
+    left: 191px;
+    top: 573px;
+
     background-image: url('../images/products/desktop/products_arrow-right.desktop.png');
 
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
