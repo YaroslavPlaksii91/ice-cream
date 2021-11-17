@@ -13,3 +13,9 @@
 .grid-masonry-item__image:hover {
   transform: scale(1.3);
 }
+
+.gallery-mobile {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
