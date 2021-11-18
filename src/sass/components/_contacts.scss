@@ -487,12 +487,14 @@
   background-color: rgba($color: #af6a7b, $alpha: 0.5);
 
   transition: all 0.8s ease 0s;
+  // transform: scale(1);
+  // transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__content {
-
+  position: relative;
   border-radius: 20px;
-  
+
   max-width: 300px;
 
   margin: 200px auto;
@@ -512,7 +514,7 @@
 }
 
 .close__modal__window {
-  // position: absolute;
+  position: absolute;
   cursor: pointer;
   top: 8px;
   right: 8px;
