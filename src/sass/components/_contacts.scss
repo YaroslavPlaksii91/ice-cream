@@ -490,9 +490,9 @@
 }
 
 .modal__content {
-
+  position: relative;
   border-radius: 20px;
-  
+
   max-width: 300px;
 
   margin: 200px auto;
@@ -512,7 +512,7 @@
 }
 
 .close__modal__window {
-  // position: absolute;
+  position: absolute;
   cursor: pointer;
   top: 8px;
   right: 8px;
