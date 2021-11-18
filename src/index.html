@@ -61,5 +61,28 @@
     ></script>
     <script defer src="./js/mobile-menu.js"></script>
     <script defer src="./js/scroll-btn.js"></script>
+
+    <!-- script contacts -->
+    <!-- modal contacts primary -->
+    <script>
+      var modal = document.getElementById("mymodal");
+      var btn = document.getElementById("btn__modal__window");
+      var close = document.getElementsByClassName("close__modal__window")[0];
+
+      btn.onclick = function () {
+        modal.style.display = "block";
+      }
+
+      close.onclick = function () {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        if(event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
   </body>
 </html>
